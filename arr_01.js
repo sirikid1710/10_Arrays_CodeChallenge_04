@@ -46,7 +46,7 @@ const tags = [
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-// output(getHTML());
+output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
@@ -98,13 +98,13 @@ function isOpenElement(tag) {
 }
 
 // Modul: Zusammenbau der Elements: <tagStr> --> Tests:
-output(getElement(tags[1],"open"));
-output(getElement(tags[1],"close"));
-output(getElement(tags[1]));
+//output(getElement(tags[1],"open"));
+//output(getElement(tags[1],"close"));
+//output(getElement(tags[1]));
 function getElement(tag,op) {
     switch (op) {
         case "open": 
-            return controls[1] + tag + controls[3];
+            return controls[1] + tag + controls[2];
         case "close":
             return controls[1] + tag + controls[2];
         default:
